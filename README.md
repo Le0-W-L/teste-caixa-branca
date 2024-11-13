@@ -35,4 +35,4 @@ Repositório criado para a realização de uma atividade da matéria de UX/UI e 
 - Explicação: O bloco *catch* na linha 16 não trata nenhuma exceção.
 
 ## ETAPA 02 - COMMIT DO ARQUIVO DO PLANO DE TESTE DE CAIXA BRANCA NO REPOSITÓRIO.
-**Arquio do Plano de Teste já foi realizado e publico na *Branch: Main***
+**Arquivo do Plano de Teste já foi realizado e publico na *Branch: Main***
