@@ -36,3 +36,6 @@ Repositório criado para a realização de uma atividade da matéria de UX/UI e 
 
 ## ETAPA 02 - COMMIT DO ARQUIVO DO PLANO DE TESTE DE CAIXA BRANCA NO REPOSITÓRIO.
 **Arquivo do Plano de Teste já foi realizado e publico na *Branch: Main***
+
+## ETAPA 03 - GRAFO DE FLUXO, COMPLECIDADE CICLOMÁTICA E BASE DE CAMINHO
+**Para visualizar a *ETAPA 03*, entre na *Branch: ETAPA_03*. Após isso, clique no *link* para visualizar o Grafo de Fluxo. As outras atividades da *ETAPA 03* estarão disponíveis no corpo do *README*.**
