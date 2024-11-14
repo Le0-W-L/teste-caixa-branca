@@ -41,4 +41,4 @@ Repositório criado para a realização de uma atividade da matéria de UX/UI e 
 **Para visualizar a *ETAPA 03*, entre na *Branch: ETAPA_03*. Após isso, clique no *link* para visualizar o Grafo de Fluxo. As outras atividades da *ETAPA 03* estarão disponíveis no corpo do *README*.**
 
 ## ETAPA 04 - DOCUMENTAÇÃO
-**Para visualizar a *ETAPA 04*, entre na *Branch: ETAPA_04*. A atividade da *ETAPA 04* estará disponível no corpo do *README*.**
+**Para visualizar a *ETAPA 04*, entre na *Branch: ETAPA_04*. A atividade da *ETAPA 04* estará disponível no corpo do *README*. Para a visualização do *JAVADOC*, acesse a pasta */doc* e encontre o arquivo *index.html*.**
