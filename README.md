@@ -18,3 +18,6 @@ A classe User possui dois métodos principais:
 **Tecnologias Utilizadas**
 - **Java** para a lógica de autenticação.
 - **MySQL** como banco de dados para armazenar informações.
+
+## ETAPA 04 - JAVADOC
+Para poder visualizar o *JAVADOC*, acesse a pasta chamada *doc*, nela irá conter um arquivo chamado *index.html*, clique nele e poderá ver o *JAVADOC* completo.
