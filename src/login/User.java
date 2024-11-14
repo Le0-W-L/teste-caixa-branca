@@ -5,57 +5,90 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ * Classe responsável por gerenciar operações de login.
+ * 
+ * Esta classe estabelece conexão com um banco de dados MySQL e
+ * realiza a verificação de credenciais de usuários.
+ */
 public class User {
-    // Nó 01
+
+    /**
+     * Variável que armazena o nome do usuário autenticado.
+     */
+    public String nome = "";
+
+    /**
+     * Variável que armazena o resultado da verificação do usuário.
+     * Retorna true se as credenciais forem válidas, caso contrário, false.
+     */
+    public boolean result = false;
+
+    /**
+     * Método responsável por conectar ao banco de dados MySQL.
+     * 
+     * @return Connection Retorna uma conexão com o banco de dados.
+     * Se a conexão falhar, retorna null.
+     */
+    @SuppressWarnings("deprecation")
     public Connection conectarBD() {
         Connection conn = null;
         try {
-            //Nó 02
+            // Carregar o driver do MySQL
             Class.forName("com.mysql.Driver.Manager").newInstance();
-
-            //Nó 03
+            
+            // Conectar ao banco de dados utilizando a URL, usuário e senha
             String url = "jdbc:mysql://127.0.0.1/test?user=lopes&password=123";
             conn = DriverManager.getConnection(url);
         } 
         catch (Exception e) {
-            //Nó 04
+            // Captura qualquer exceção que possa ocorrer durante a conexão
+            // e retorna null se falhar
         }
-        //Nó 05
         return conn;
     }
 
-    public String nome = "";
-    public boolean result = false;
-
-    //Nó 06
+    /**
+     * Método que verifica se o usuário e a senha fornecidos são válidos.
+     * 
+     * @param login O login do usuário.
+     * @param senha A senha do usuário.
+     * @return boolean Retorna true se o usuário for autenticado com sucesso,
+     * caso contrário, retorna false.
+     */
     public boolean verificarUsuario(String login, String senha) {
         String sql = "";
 
-        //Nó 07
-        Connection conn = conectarBD();
-
-        // INSTRUCAO SQL - Nó 08
+        // Montar a instrução SQL para consulta no banco de dados
         sql += "select none from usuarios ";
         sql += "where login = " + " ' " + login + " ' ";
         sql += " and senha = " + " ' " + senha + " '; ";
+        
+        // Conectar ao banco de dados
+        Connection conn = conectarBD();
+        
         try {
-            //Nó 09
+            // Criar um Statement para executar a consulta
             Statement st = conn.createStatement();
-
-            //Nó 10
+            
+            // Executar a consulta SQL
             ResultSet rs = st.executeQuery(sql);
-
-            //Nó 11
+            
+            // Verificar se a consulta retornou resultados
             if (rs.next()) {
-                //Nó 12
+                // Usuário autenticado com sucesso
                 result = true;
+                
+                // Armazenar o nome do usuário
                 nome = rs.getString("nome");
             }
         } 
         catch (Exception e) {
-            //Nó 13
+            // Captura qualquer exceção durante a execução da consulta
         }
-        //Nó 14
+        
+        // Retornar o resultado da autenticação
         return result;
     }
-} // fim da class
+} 
+// Fim da Classe
