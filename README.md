@@ -34,10 +34,10 @@ Repositório criado para a realização de uma atividade da matéria de UX/UI e 
 - Erro: Exceção não tratada.
 - Explicação: O bloco *catch* na linha 16 não trata nenhuma exceção.
 
-## ETAPA 02 - COMMIT DO ARQUIVO DO PLANO DE TESTE DE CAIXA BRANCA NO REPOSITÓRIO.
+## ETAPA 02 - ARQUIVO DO PLANO DE TESTE DE CAIXA BRANCA NO REPOSITÓRIO.
 **Arquivo do Plano de Teste já foi realizado e publico na *Branch: Main***
 
-## ETAPA 03 - GRAFO DE FLUXO, COMPLECIDADE CICLOMÁTICA E BASE DE CAMINHO
+## ETAPA 03 - GRAFO DE FLUXO, COMPLEXIDADE CICLOMÁTICA E BASE DE CAMINHO
 **Para visualizar a *ETAPA 03*, entre na *Branch: ETAPA_03*. Após isso, clique no *link* para visualizar o Grafo de Fluxo. As outras atividades da *ETAPA 03* estarão disponíveis no corpo do *README*.**
 
 ## ETAPA 04 - DOCUMENTAÇÃO
